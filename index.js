@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // application routes
-const routes = require("./routes/routes");
+const routes = require("./routes");
 app.use("/", routes.appRoutes);
 
 // start application

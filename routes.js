@@ -9,7 +9,7 @@ const {
     receiveMsg,
     deleteMsg,
     purgeQueue,
-} = require("../handler/requests");
+} = require("./sqs/requests");
 
 // get sqs config status
 // endpoint - http://localhost:6001/status
