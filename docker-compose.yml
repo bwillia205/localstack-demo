@@ -1,0 +1,13 @@
+services: 
+  localstack: 
+    environment: 
+      - AWS_DEFAULT_REGION=us-west-2
+      - EDGE_PORT=4566
+      - SERVICES=sqs
+    image: "localstack/localstack:latest"
+    ports: 
+      - "4566:4566"
+    volumes: 
+      - "/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+version: "3.0"
